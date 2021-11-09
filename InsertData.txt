@@ -1,0 +1,8 @@
+USE musikdatenbank;
+INSERT INTO genre(name) VALUES("Rock");
+INSERT INTO label(name) VALUES("Loma Vista Recordings");
+INSERT INTO titel(name, dauer, jahr) VALUES("The Numbers", 299, 2021), ("Sudden Urge", 226, 2021);
+INSERT INTO künstler(name, labelID) VALUES("Rise Against", 1);
+INSERT INTO album(name, genreID, jahr) VALUES("Nowhere Generation", 1, 2021);
+INSERT INTO album_titel VALUES(1, 1), (1, 2);
+INSERT INTO album_künstler VALUES(1, 1);

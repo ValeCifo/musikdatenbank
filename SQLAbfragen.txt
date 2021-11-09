@@ -1,0 +1,2 @@
+# Alle Titel eines Albums auswählen
+SELECT * FROM album  a JOIN album_titel a_t ON a.albumID = a_t.albumID JOIN titel ON titel.titelID = a_t.titelID;
