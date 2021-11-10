@@ -1,2 +1,2 @@
 # Alle Titel eines Albums auswählen
-SELECT * FROM album  a JOIN album_titel a_t ON a.albumID = a_t.albumID JOIN titel ON titel.titelID = a_t.titelID;
+SELECT a.name as album, a.jahr as erscheinungsjahr, t.name as titel, g.name as genre, k.name as künstler FROM album a JOIN album_titel a_t ON a.albumID = a_t.albumID JOIN titel t ON t.titelID = a_t.titelID JOIN album_künstler a_k on a.albumID = a_k.albumID JOIN künstler k on k.künstlerID = a_k.künstlerID JOIN genre g ON a.genreID = g.genreID;
