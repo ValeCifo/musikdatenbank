@@ -1,7 +1,20 @@
 USE musikdatenbank;
 INSERT INTO genre(name) VALUES("Rock");
 INSERT INTO label(name) VALUES("Loma Vista Recordings");
-INSERT INTO titel(name, dauer, jahr) VALUES("The Numbers", 299, 2021), ("Sudden Urge", 226, 2021);
+
+INSERT INTO `titel` (`titelID`, `name`, `dauer`, `jahr`) VALUES
+(1, 'The Numbers', 299, 2021),
+(2, 'Sudden Urge', 226, 2021),
+(3, 'Nowhere Generation', 232, 2021),
+(4, 'Talking to Ourselves', 204, 2021),
+(5, 'Broken Dreams, Inc', 233, 2021),
+(6, 'Forfeit', 224, 2021),
+(7, 'Monarch', 212, 2021),
+(8, 'Sounds Like', 205, 2021),
+(9, 'Sooner Or Later', 214, 2021),
+(10, 'Middle Of A Dream', 224, 2021),
+(11, 'Rules Of Play', 223, 2021);
+
 INSERT INTO künstler(name, labelID) VALUES("Rise Against", 1);
 INSERT INTO album(name, genreID, jahr) VALUES("Nowhere Generation", 1, 2021);
 INSERT INTO album_titel VALUES(1, 1), (1, 2);
