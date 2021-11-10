@@ -17,5 +17,5 @@ INSERT INTO `titel` (`titelID`, `name`, `dauer`, `jahr`) VALUES
 
 INSERT INTO künstler(name, labelID) VALUES("Rise Against", 1);
 INSERT INTO album(name, genreID, jahr) VALUES("Nowhere Generation", 1, 2021);
-INSERT INTO album_titel VALUES(1, 1), (1, 2);
+INSERT INTO `album_titel` (`albumID`, `titelID`) VALUES (1, 1),(1, 2),(1, 3),(1, 4),(1, 5),(1, 6),(1, 7),(1, 8),(1, 9),(1, 10),(1, 11);
 INSERT INTO album_künstler VALUES(1, 1);
